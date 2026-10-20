@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System Administrator Career Portfolio | Justine Jacob M. Tupas</title>
+<meta name="description" content="Career portfolio about the System Administrator profession.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Outfit:wght@400;500;700&family=Fira+Code&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fire" aria-hidden="true"></canvas>
+<div class="heat" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <a href="#home" class="logo">&gt;_ Sys<span>Admin</span></a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="#home" data-i18n="nav_home">Home</a>
+    <a href="#roles" data-i18n="nav_roles">Roles</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#tools" data-i18n="nav_tools">Tools</a>
+    <a href="#terminal" data-i18n="nav_term">Terminal</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <select id="lang" aria-label="Language">
+      <option value="en">🌐 English</option>
+      <option value="fil">🇵🇭 Filipino</option>
+    </select>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="kicker" data-i18n="hero_k">Career Portfolio · Fundamentals</p>
+  <h1 data-i18n="hero_t">Web-Based System Administrator Career Portfolio</h1>
+  <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+  <p class="lead" data-i18n="hero_p">A System Administrator keeps computers, servers and networks running smoothly so that everyone else can do their work. They install, secure, monitor and repair the systems an organization depends on every day.</p>
+  <div class="cta">
+    <a class="btn" href="#roles" data-i18n="cta1">Explore the career</a>
+    <a class="btn ghost" href="#terminal" data-i18n="cta2">Try the terminal</a>
+  </div>
+</section>
+
+<section id="roles"><h2 data-i18n="roles_h">Roles and Responsibilities</h2><div class="grid" id="rolesGrid"></div></section>
+<section id="skills"><h2 data-i18n="skills_h">Technical and Professional Skills</h2><div class="grid" id="skillsGrid"></div></section>
+<section id="tools"><h2 data-i18n="tools_h">System Administration Tools</h2><div class="grid" id="toolsGrid"></div></section>
+
+<section id="terminal">
+  <h2 data-i18n="term_h">Try a Linux Command Prompt</h2>
+  <p class="sub" data-i18n="term_p">Type commands like help, ls, whoami, neofetch or top. Press ↑ for history and Tab to autocomplete.</p>
+  <div class="term" id="term">
+    <div class="bar"><b></b><b></b><b></b><span>ivy@ubuntu-server: ~</span></div>
+    <div class="out" id="out"></div>
+    <div class="line"><span class="ps" id="ps"></span><input id="cmd" autocomplete="off" spellcheck="false" aria-label="Command"></div>
+  </div>
+  <div class="chips" id="chips"></div>
+</section>
+
+<section id="about">
+  <h2 data-i18n="about_h">About the Developer</h2>
+  <div class="about">
+    <div class="frame-wrap" id="tilt">
+      <div class="frame">
+        <img src="images 555.jpg" alt="Justine Jacob M. Tupas" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'JT'}))">
+      </div>
+    </div>
+    <div class="about-text">
+      <h3>Justine Jacob M. Tupas</h3>
+      <p class="prog" data-i18n="about_prog">Course / Program: [Your course here]</p>
+      <p data-i18n="about_p1">Hello! I am a student who enjoys building websites and learning how computers and networks work behind the scenes.</p>
+      <p data-i18n="about_p2">I am interested in the IT industry because every organization depends on technology, and I want to be one of the people who keeps it reliable, secure and helpful.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Justine Jacob M. Tupas · <span data-i18n="foot">Built with ☕ and curiosity</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
